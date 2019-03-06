@@ -83,7 +83,6 @@ app.get('/characters', function(request, response) {
 
 app.get('/creators', function(request, response) {
   response.sendFile(__dirname + '/creators.json');
-
 });
 
 /* marvel.characters.findAll()
