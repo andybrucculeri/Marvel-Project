@@ -72,7 +72,7 @@ creators.forEach((creator) => {
     });
       
   })
-  .fail(console.error)
+  .fail(console.error) 
   .done();
 
 
