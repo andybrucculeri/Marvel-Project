@@ -4,6 +4,7 @@
 // init project
 const express = require('express');
 const app = express();
+var fs = require('fs');
 
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
@@ -24,29 +25,25 @@ var marvel = api.createClient({
 , privateKey: process.env.PRIVATE_KEY
 });
 
-app.get('/characters', function(request, response) {
-  
-  marvel.characters.findAll()
-    .then(function(data) {
-      
-      console.log(data.data);
-    
-      // Send the first (only) track object
-      // response.send(data.data);
-    
-    })
-    .fail(console.error) 
-    .done();
 
+  marvel.characters.findAll()
+  .then(function(data) {
+    console.log(data.data);
+    return new Promise(function(resolve, reject){
+      fs.writeFile('characters.json', 
 
 });
+    });
+      
+  })
+  .fail(console.error)
+  .done();
 
-  // marvel.characters.findAll()
-  // .then(function(data) {
-  //   console.log(data.data);
-  // })
-  // .fail(console.error)
-  // .done();
+
+app.get('/characters', function(request, response) {
+  
+
+});
 
 /* marvel.characters.findAll()
   .then(console.log)
