@@ -1,3 +1,43 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+ 
+.slide .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+ 
+.intro {
+    background: #305a5b;
+}
+ 
+.parallax {
+    background: url(https://cdn.hyperdev.com/click-me.svg?1477239469954) 50% 0;
+}
+ 
+.slidein {
+    background: #5b3030;
+}
+ 
+.slidein2 {
+    background: #304b5b;
+}
+ 
+.slidein2 .row {
+    justify-content: space-around;
+}
+
+
+
+
+
+
+/*
 h1{
   color:red;
 }
@@ -47,13 +87,13 @@ section {
   text-align: center;
 }
 
-/* Center aligned first section */
+/* Center aligned first section 
 section .inner {
   margin: 0 auto;
   max-width: 85%;
 }
 
-/* Content of the following sections aligned next to the iphone */
+/* Content of the following sections aligned next to the iphone 
 section .innerText {
   position: absolute;
   top: 50%;
@@ -62,7 +102,7 @@ section .innerText {
   text-align: left;
 }
 
-/* iPhone/Card positioned to the left - this is a default position */
+/* iPhone/Card positioned to the left - this is a default position 
 .iphone {
   width: 290px;
   height: 600px;
@@ -76,7 +116,7 @@ section .innerText {
   background-image: radial-gradient(#81bcff, #5d7fce);
 }
 
-/* Centered content of the ScrollMagic card */
+/* Centered content of the ScrollMagic card 
 .iphone p {
   font-size: 140px;
   margin: 0;
@@ -87,13 +127,13 @@ section .innerText {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Letters hidden by default */
+/* Letters hidden by default 
 .iphone p.screenA, .iphone p.screenB, .iphone p.screenC {
   opacity: 0;
   visibility: hidden;
 }
 
-/* ScrollMagic hat on top of letters */
+/* ScrollMagic hat on top of letters 
 .iphone p.screenHat {
   z-index: 2;
 }
@@ -101,7 +141,7 @@ section .innerText {
   max-width: 130px;
 }
 
-/* Bullet list */
+/* Bullet list
 .features {
   list-style: none;
   margin: 0;
@@ -113,7 +153,7 @@ section .innerText {
   padding-left: 17px;
 }
 
-/* A heart instead of a bullet */
+/* A heart instead of a bullet 
 .features li:before {
   content: '❤';
   font-size: 11px;
@@ -123,3 +163,4 @@ section .innerText {
   display: block;
   color: #ff466a;
 }
+*/
