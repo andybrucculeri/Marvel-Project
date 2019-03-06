@@ -25,14 +25,41 @@ var marvel = api.createClient({
 , privateKey: process.env.PRIVATE_KEY
 });
 
+let creators = [{
+  "first": "Stan",
+  "last": "Lee"
+},{
+  "first": "Steve",
+  "last": "Ditko"
+
+}
+]
+
+// Loop over creators
+creators.forEach((creator) => {
+  marvel.creators.findByName(creator.first, '', creator.last)
+    .then(function(data) {
+      console.log(data);
+    var 
+    // create a while loop
+    while () {
+           
+    }
+  
+  });
+
+});
 
   marvel.characters.findAll()
   .then(function(data) {
-    console.log(data.data);
+    // console.log(data.data);
     return new Promise(function(resolve, reject){
-      fs.writeFile('characters.json', 
+      fs.writeFile('characters.json', JSON.stringify(data.data, null, 2), (err) => {
+      if(err) reject (err);
+        else resolve();
+        console.log('hi there we did it');
 
-});
+      });
     });
       
   })
@@ -41,7 +68,7 @@ var marvel = api.createClient({
 
 
 app.get('/characters', function(request, response) {
-  
+  response.sendFile(__dirname + '/characters.json');
 
 });
 
