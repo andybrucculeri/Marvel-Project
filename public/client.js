@@ -64,14 +64,6 @@
 
 	});
 
-	// iPhone intro animation Tween
-	/*
-	var iphoneIntro = TweenMax.from($iphone, 1, {
-		yPercent: 50,
-		xPercent: 100,
-		ease: Cubic.easeOut
-	});
-  */
 
 	// iPhone intro animation Timeline
 	var iphoneIntroTl = new TimelineMax();
