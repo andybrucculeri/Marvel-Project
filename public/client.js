@@ -8,6 +8,8 @@
 //    .setPin("#my-sticky-element") // pins the element for the the scene's duration
 //    .addTo(controller); // assign the scene to the controller
 
+document.addEventListener('DOMloaded', function(){
+  fetch ('https://gateway.marvel.com:443/v1/public/characters?apikey=1b13f3274f0d6f6d29c6c960c0378d08').then(resp => resp.json()).then((data) => {
 
     var wh = window.innerHeight,
 	$iphone = $('.iphone'),
@@ -107,3 +109,5 @@
   .addTo(ctrl);
 
 console.log('woot');
+  
+});
