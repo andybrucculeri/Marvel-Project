@@ -16,29 +16,37 @@ app.get('/', function(request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
-// listen for requests :)
-const listener = app.listen(process.env.PORT, function() {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
 
 var api = require('marvel-api');
  
 var marvel = api.createClient({
-  publicKey: 'PUBLIC_KEY'
-, privateKey: 'PRIVATE_KEY'
+  publicKey: process.env.PUBLIC_KEY
+, privateKey: process.env.PRIVATE_KEY
 });
 
 app.get('/characters', function(request, response) {
-
+  
   marvel.characters.findAll()
-  .then(function(data) {
-    response.send(data.data);
-  }
-  ), 
+    .then(function(data) {
+      
+      console.log(data.data);
+    
+      // Send the first (only) track object
+      // response.send(data.data);
+    
+    })
+    .fail(console.error) 
+    .done();
 
 
 });
 
+  // marvel.characters.findAll()
+  // .then(function(data) {
+  //   console.log(data.data);
+  // })
+  // .fail(console.error)
+  // .done();
 
 /* marvel.characters.findAll()
   .then(console.log)
@@ -56,3 +64,9 @@ marvel.characters.findByName('spider-man')
   })
   .fail(console.error)
   .done(); */
+
+
+// listen for requests :)
+const listener = app.listen(process.env.PORT, function() {
+  console.log('Your app is listening on port ' + listener.address().port);
+});
