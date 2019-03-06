@@ -28,11 +28,17 @@ var marvel = api.createClient({
 , privateKey: 'PRIVATE_KEY'
 });
 
+app.get('/characters', function(request, response) {
 
-marvel.characters.findAll()
-  .then(console.log)
-  .fail(console.error)
-  .done();
+  marvel.characters.findAll()
+  .then(function(data) {
+    response.send(data.data);
+  }
+  ), 
+
+
+});
+
 
 /* marvel.characters.findAll()
   .then(console.log)

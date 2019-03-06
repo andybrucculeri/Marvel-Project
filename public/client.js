@@ -8,9 +8,23 @@
 //    .setPin("#my-sticky-element") // pins the element for the the scene's duration
 //    .addTo(controller); // assign the scene to the controller
 
-document.addEventListener('DOMloaded', function(){
-  fetch ('https://gateway.marvel.com:443/v1/public/characters?apikey=1b13f3274f0d6f6d29c6c960c0378d08').then(resp => resp.json()).then((data) => {
+(function() {
 
+//       fetch('/https://gateway.marvel.com:443/v1/public/characters?apikey=1b13f3274f0d6f6d29c6c960c0378d08').then(resp => resp.json()).then((data) => {
+//     // "Data" is the object we get from the API. See server.js for the function that returns it.
+//     console.group('%cResponse from https://gateway.marvel.com:443/v1/public/characters?apikey=1b13f3274f0d6f6d29c6c960c0378d08', 'color: #F037A5; font-size: large');
+//     console.log(data);
+//     console.groupEnd();
+//       });
+  
+  fetch('/characters')
+    .then(resp => resp.json()).then((data) => {
+    console.group('%cResponse from /characters', 'color: #F037A5; font-size: large');
+    console.log(data);
+    console.groupEnd();
+  
+  })
+    
     var wh = window.innerHeight,
 	$iphone = $('.iphone'),
 	$innerS1 = $('.innerS1'),
@@ -109,5 +123,4 @@ document.addEventListener('DOMloaded', function(){
   .addTo(ctrl);
 
 console.log('woot');
-  
-});
+  })();
