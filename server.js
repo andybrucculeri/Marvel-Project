@@ -34,6 +34,11 @@ marvel.characters.findAll()
   .fail(console.error)
   .done();
 
+/* marvel.characters.findAll()
+  .then(console.log)
+  .fail(console.error)
+  .done();
+
 marvel.characters.findByName('spider-man')
   .then(function(res) {
     console.log('Found character ID', res.data[0].id);
@@ -44,4 +49,4 @@ marvel.characters.findByName('spider-man')
     console.log(res.data);
   })
   .fail(console.error)
-  .done();
+  .done(); */
