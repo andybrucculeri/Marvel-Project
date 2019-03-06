@@ -40,10 +40,19 @@ creators.forEach((creator) => {
   marvel.creators.findByName(creator.first, '', creator.last)
     .then(function(data) {
       console.log(data);
-    var 
+     creator.data = data.data[0];
     // create a while loop
-    while () {
-           
+    while (creators.filter(creator => creator.data !== undefined).length === creators.length) {
+        
+    console.log(creators);  
+         return new Promise(function(resolve, reject){
+      fs.writeFile('creators.json', JSON.stringify(creators, null, 2), (err) => {
+      if(err) reject (err);
+        else resolve();
+        console.log('creators.json file made');
+
+      });
+    });
     }
   
   });
@@ -69,6 +78,11 @@ creators.forEach((creator) => {
 
 app.get('/characters', function(request, response) {
   response.sendFile(__dirname + '/characters.json');
+
+});
+
+app.get('/creators', function(request, response) {
+  response.sendFile(__dirname + '/creators.json');
 
 });
 

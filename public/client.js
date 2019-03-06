@@ -24,7 +24,16 @@
     console.groupEnd();
   
   })
-    
+  
+    fetch('/creators')
+    .then(resp => resp.json()).then((data) => {
+    console.group('%cResponse from /creators', 'color: #F037A5; font-size: large');
+    console.log(data);
+    console.groupEnd();
+  
+  })  
+  
+  
     var wh = window.innerHeight,
 	$iphone = $('.iphone'),
 	$innerS1 = $('.innerS1'),
