@@ -43,12 +43,12 @@
   
   //ajax attempt 
   
-    var url = '../series.json';
+   // var url = '../series.json';
     var series = '';
   
    $.ajax({
     type:'GET',
-    url: url,
+    url: './series.json',
     data: series,
     async: true,
     dataType:'json',
