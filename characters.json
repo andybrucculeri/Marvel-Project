@@ -449,12 +449,12 @@
           "name": "Avengers Vol. II: Red Zone (2003)"
         },
         {
-          "resourceURI": "http://gateway.marvel.com/v1/public/series/1997",
-          "name": "Captain America (1998 - 2002)"
-        },
-        {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/1996",
           "name": "Captain America (1968 - 1996)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1997",
+          "name": "Captain America (1998 - 2002)"
         },
         {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/23810",
@@ -473,12 +473,12 @@
           "name": "Indestructible Hulk (2012 - Present)"
         },
         {
-          "resourceURI": "http://gateway.marvel.com/v1/public/series/2029",
-          "name": "Iron Man (1968 - 1996)"
-        },
-        {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/16593",
           "name": "Iron Man (2012 - Present)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/2029",
+          "name": "Iron Man (1968 - 1996)"
         },
         {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/23915",
@@ -1987,12 +1987,12 @@
           "name": "Fantastic Four (1961 - 1998)"
         },
         {
-          "resourceURI": "http://gateway.marvel.com/v1/public/series/23674",
-          "name": "Guardians of the Galaxy (2017 - Present)"
-        },
-        {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/4885",
           "name": "Guardians of the Galaxy (2008 - 2010)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/23674",
+          "name": "Guardians of the Galaxy (2017 - Present)"
         },
         {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/22422",
@@ -2019,12 +2019,12 @@
           "name": "Infinity Countdown: Adam Warlock (2018)"
         },
         {
-          "resourceURI": "http://gateway.marvel.com/v1/public/series/6673",
-          "name": "Infinity Crusade (1993)"
-        },
-        {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/24051",
           "name": "Infinity Crusade (2018)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/6673",
+          "name": "Infinity Crusade (1993)"
         },
         {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/6449",
