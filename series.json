@@ -1325,26 +1325,6 @@
       "collectionURI": "http://gateway.marvel.com/v1/public/series/7521/comics",
       "items": [
         {
-          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24325",
-          "name": "2009 Mini-Poster 6 (2009) #1"
-        },
-        {
-          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24342",
-          "name": "2009 Mini-Poster 6 (2009) #1"
-        },
-        {
-          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24328",
-          "name": "2009 Mini-Poster 6 (2009) #1"
-        },
-        {
-          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24329",
-          "name": "2009 Mini-Poster 6 (2009) #1"
-        },
-        {
-          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24336",
-          "name": "2009 Mini-Poster 6 (2009) #1"
-        },
-        {
           "resourceURI": "http://gateway.marvel.com/v1/public/comics/24338",
           "name": "2009 Mini-Poster 6 (2009) #1"
         },
@@ -1366,6 +1346,26 @@
         },
         {
           "resourceURI": "http://gateway.marvel.com/v1/public/comics/24341",
+          "name": "2009 Mini-Poster 6 (2009) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24325",
+          "name": "2009 Mini-Poster 6 (2009) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24342",
+          "name": "2009 Mini-Poster 6 (2009) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24328",
+          "name": "2009 Mini-Poster 6 (2009) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24329",
+          "name": "2009 Mini-Poster 6 (2009) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24336",
           "name": "2009 Mini-Poster 6 (2009) #1"
         }
       ],
