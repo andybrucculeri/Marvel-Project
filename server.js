@@ -113,8 +113,6 @@ app.get('/series', function(request, response) {
   response.sendFile(__dirname + '/series.json');
 });
 
-]
-
 
 /* 
 

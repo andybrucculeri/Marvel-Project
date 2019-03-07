@@ -40,18 +40,7 @@
     console.groupEnd();
   
   })  
-  
-  
-       fetch('/series')
-    .then(resp => resp.json()).then((data) => {
-    console.group('%cResponse from /series', 'color: #F037A5; font-size: large');
-    console.log(data);
-    console.groupEnd();
-  
-  marvel.characters.comics('1011334')
-  .then(console.log)
-  .fail(console.error)
-  .done();
+
   
   //ajax attempt 
   
@@ -74,16 +63,16 @@
   var ctx = document.getElementById('myChart').getContext('2d');
   var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'line',
+    type: 'bar',
 
     // The data for our dataset
     data: {
-        labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2015"],
+        labels: ["3-D Man", "Absorbing Man", "Agent Zero", "2012", "2013", "2014", "2015"],
         datasets: [{
-            label: "My First dataset",
+            label: "Number of Stories Each Character is In",
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45],
+            data: [21, 96, 25, 2, 20, 30, 45],
                 }]
             },
     
