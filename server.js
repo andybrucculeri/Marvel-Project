@@ -76,6 +76,24 @@ creators.forEach((creator) => {
   .done();
 
 
+  marvel.series.findAll()
+  .then(function(data) {
+    // console.log(data.data);
+    return new Promise(function(resolve, reject){
+      fs.writeFile('series.json', JSON.stringify(data.data, null, 2), (err) => {
+      if(err) reject (err);
+        else resolve();
+        console.log('hi there we did it');
+
+      });
+    });
+      
+  })
+  .fail(console.error) 
+  .done();
+
+
+
 app.get('/characters', function(request, response) {
   response.sendFile(__dirname + '/characters.json');
 
@@ -83,6 +101,10 @@ app.get('/characters', function(request, response) {
 
 app.get('/creators', function(request, response) {
   response.sendFile(__dirname + '/creators.json');
+});
+
+app.get('/series', function(request, response) {
+  response.sendFile(__dirname + '/series.json');
 });
 
 /* marvel.characters.findAll()

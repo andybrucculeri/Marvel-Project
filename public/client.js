@@ -33,6 +33,14 @@
   
   })  
   
+      fetch('/series')
+    .then(resp => resp.json()).then((data) => {
+    console.group('%cResponse from /series', 'color: #F037A5; font-size: large');
+    console.log(data);
+    console.groupEnd();
+  
+  })  
+  
   
   
 //start scrollmagic simple demo 
