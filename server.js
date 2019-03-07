@@ -104,7 +104,11 @@ app.get('/creators', function(request, response) {
 });
 
 app.get('/series', function(request, response) {
-  
+  response.sendFile(__dirname + '/series.json');
+});
+
+/* 
+
   let series = [];
   
     // Check will see if we have .data on all the country objects
@@ -121,10 +125,14 @@ app.get('/series', function(request, response) {
   
   // Call check so we don't send a response until we have all the data back
   check();
-  
-});
 
-/* marvel.characters.findAll()
+
+
+
+
+
+
+marvel.characters.findAll()
   .then(console.log)
   .fail(console.error)
   .done();
