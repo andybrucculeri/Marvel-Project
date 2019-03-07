@@ -66,7 +66,7 @@ creators.forEach((creator) => {
       fs.writeFile('characters.json', JSON.stringify(data.data, null, 2), (err) => {
       if(err) reject (err);
         else resolve();
-        console.log('hi there we did it');
+        console.log('characters found');
 
       });
     });
@@ -83,7 +83,7 @@ creators.forEach((creator) => {
       fs.writeFile('series.json', JSON.stringify(data.data, null, 2), (err) => {
       if(err) reject (err);
         else resolve();
-        console.log('hi there we did it');
+        console.log('series found');
 
       });
     });
