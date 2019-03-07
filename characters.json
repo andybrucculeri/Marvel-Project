@@ -1148,7 +1148,7 @@
     "urls": [
       {
         "type": "detail",
-        "url": "http://marvel.com/comics/characters/1009146/abomination_emil_blonsky?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
+        "url": "http://marvel.com/characters/81/abomination?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
       },
       {
         "type": "wiki",
@@ -1556,7 +1556,7 @@
     "urls": [
       {
         "type": "detail",
-        "url": "http://marvel.com/characters/84/absorbing_man?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
+        "url": "http://marvel.com/comics/characters/1009148/absorbing_man?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
       },
       {
         "type": "wiki",
@@ -2998,20 +2998,20 @@
           "name": "Agents of Atlas (2009) #3"
         },
         {
-          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24017",
-          "name": "Agents of Atlas (2009) #3 (Wolverine Art Appreciation Variant)"
-        },
-        {
           "resourceURI": "http://gateway.marvel.com/v1/public/comics/24016",
           "name": "Agents of Atlas (2009) #3 (MCGUINNESS VARIANT)"
         },
         {
-          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24219",
-          "name": "Agents of Atlas (2009) #4"
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24017",
+          "name": "Agents of Atlas (2009) #3 (Wolverine Art Appreciation Variant)"
         },
         {
           "resourceURI": "http://gateway.marvel.com/v1/public/comics/5404",
           "name": "Agents of Atlas (2006) #4"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24219",
+          "name": "Agents of Atlas (2009) #4"
         },
         {
           "resourceURI": "http://gateway.marvel.com/v1/public/comics/5665",
