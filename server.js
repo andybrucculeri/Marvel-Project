@@ -93,6 +93,23 @@ creators.forEach((creator) => {
   .done();
 
 
+  marvel.creators.30.series()
+  .then(function(data) {
+    // console.log(data.data);
+    return new Promise(function(resolve, reject){
+      fs.writeFile('series.json', JSON.stringify(data.data, null, 2), (err) => {
+      if(err) reject (err);
+        else resolve();
+        console.log('series found');
+
+      });
+    });
+      
+  })
+  .fail(console.error) 
+  .done();
+
+
 
 app.get('/characters', function(request, response) {
   response.sendFile(__dirname + '/characters.json');
@@ -104,9 +121,13 @@ app.get('/creators', function(request, response) {
 });
 
 app.get('/series', function(request, response) {
-  let series.offset
   response.sendFile(__dirname + '/series.json');
 });
+
+app.get('/creators/30/series', function(request, response) {
+  response.sendFile(__dirname + '/stanLee.json');
+});
+
 
 /* 
 
