@@ -105,12 +105,14 @@ app.get('/creators', function(request, response) {
 
 app.get('/series', function(request, response) {
   
+  let series = [];
+  
     // Check will see if we have .data on all the country objects
   // which indicates all requests have returned successfully.
   // If the lengths don't match then we call check again in 500ms
   let check = () => {
-    if (countries.filter(c => c.data !== undefined).length 
-    !== countries.length) {
+    if (series.filter(c => c.data !== undefined).length 
+    !== series.length) {
       setTimeout(check, 500);
     } else {
       response.sendFile(__dirname + '/series.json');
@@ -119,7 +121,6 @@ app.get('/series', function(request, response) {
   
   // Call check so we don't send a response until we have all the data back
   check();
-  
   
 });
 
