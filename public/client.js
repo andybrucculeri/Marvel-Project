@@ -55,7 +55,7 @@
     error: function(series, white){ console.log('Your ajax call failed. Sorry fam.'); },
     success:function(series){
       console.log('series ajax call success');
-      console.log(series);
+      console.log(series[0].startYear);
   
   // charts.js demo
   
