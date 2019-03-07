@@ -41,11 +41,24 @@
   
   })  
   
+  //ajax attempt 
+  
+    var dataUrl = './series.json';
+    var series = '';
+  
+   $.ajax({
+    type:'GET',
+    url: dataUrl,
+    data: series,
+    async: true,
+    dataType:'json',
+    success:function(donations){
+      console.log('series ajax');
   
   // charts.js demo
   
   var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
+  var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'line',
 
@@ -57,13 +70,15 @@ var chart = new Chart(ctx, {
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             data: [0, 10, 5, 2, 20, 30, 45],
-        }]
-    },
-
+                }]
+            },
+    
     // Configuration options go here
     options: {}
-});
+          });
   
+      } //close success
+  }); //close ajax
   
   
 //start scrollmagic simple demo 
