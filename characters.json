@@ -615,7 +615,7 @@
     "urls": [
       {
         "type": "detail",
-        "url": "http://marvel.com/comics/characters/1009144/aim.?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
+        "url": "http://marvel.com/characters/77/aim.?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
       },
       {
         "type": "wiki",
@@ -1556,7 +1556,7 @@
     "urls": [
       {
         "type": "detail",
-        "url": "http://marvel.com/comics/characters/1009148/absorbing_man?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
+        "url": "http://marvel.com/characters/84/absorbing_man?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
       },
       {
         "type": "wiki",
@@ -2785,12 +2785,12 @@
           "name": "Weapon X (2002 - 2004)"
         },
         {
-          "resourceURI": "http://gateway.marvel.com/v1/public/series/1478",
-          "name": "Weapon X: Days of Future Now (2006)"
-        },
-        {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/869",
           "name": "Weapon X: Days of Future Now (2005)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1478",
+          "name": "Weapon X: Days of Future Now (2006)"
         },
         {
           "resourceURI": "http://gateway.marvel.com/v1/public/series/3648",
@@ -2935,7 +2935,7 @@
     "urls": [
       {
         "type": "detail",
-        "url": "http://marvel.com/comics/characters/1009150/agent_zero?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
+        "url": "http://marvel.com/characters/102/agent_zero?utm_campaign=apiRef&utm_source=1b13f3274f0d6f6d29c6c960c0378d08"
       },
       {
         "type": "wiki",

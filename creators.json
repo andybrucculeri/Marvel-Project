@@ -16,7 +16,7 @@
       },
       "resourceURI": "http://gateway.marvel.com/v1/public/creators/30",
       "comics": {
-        "available": 2879,
+        "available": 2880,
         "collectionURI": "http://gateway.marvel.com/v1/public/creators/30/comics",
         "items": [
           {
@@ -190,7 +190,7 @@
         "returned": 20
       },
       "stories": {
-        "available": 8076,
+        "available": 8077,
         "collectionURI": "http://gateway.marvel.com/v1/public/creators/30/stories",
         "items": [
           {
@@ -491,11 +491,11 @@
             "name": "Avengers: West Coast Avengers - Sins of the Past (2014)"
           },
           {
-            "resourceURI": "http://gateway.marvel.com/v1/public/series/17327",
+            "resourceURI": "http://gateway.marvel.com/v1/public/series/17326",
             "name": "Avengers: West Coast Avengers Omnibus (2013)"
           },
           {
-            "resourceURI": "http://gateway.marvel.com/v1/public/series/17326",
+            "resourceURI": "http://gateway.marvel.com/v1/public/series/17327",
             "name": "Avengers: West Coast Avengers Omnibus (2013)"
           },
           {
