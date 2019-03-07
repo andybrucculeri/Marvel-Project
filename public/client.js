@@ -41,6 +41,18 @@
   
   })  
   
+  
+       fetch('/series')
+    .then(resp => resp.json()).then((data) => {
+    console.group('%cResponse from /series', 'color: #F037A5; font-size: large');
+    console.log(data);
+    console.groupEnd();
+  
+  marvel.characters.comics('1011334')
+  .then(console.log)
+  .fail(console.error)
+  .done();
+  
   //ajax attempt 
   
    // var url = '../series.json';
