@@ -66,7 +66,7 @@
 
     // The data for our dataset
     data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2015"],
         datasets: [{
             label: "My First dataset",
             backgroundColor: 'rgb(255, 99, 132)',
