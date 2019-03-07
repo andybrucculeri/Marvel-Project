@@ -3,9 +3,8 @@ body {
     font-family: sans-serif;
 }
 
- h1{
-  text-size: 50px;
-
+ .heading {
+  font-size: 50px;
 }
  
 .slide .row {
@@ -30,7 +29,7 @@ body {
 }
  
 .slidein2 {
-    background: #304b5b;
+    background: #add8e6;
 }
  
 .slidein2 .row {
