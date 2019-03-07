@@ -7,7 +7,7 @@
   
    $.ajax({
     type:'GET',
-    url: './series.json',
+    url: 'series.json',
     data: series,
     async: true,
     dataType:'json',
