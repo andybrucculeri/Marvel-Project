@@ -104,6 +104,7 @@ app.get('/creators', function(request, response) {
 });
 
 app.get('/series', function(request, response) {
+  let series.offset
   response.sendFile(__dirname + '/series.json');
 });
 
