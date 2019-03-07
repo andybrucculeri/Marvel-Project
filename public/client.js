@@ -43,16 +43,17 @@
   
   //ajax attempt 
   
-    var dataUrl = './series.json';
+    var url = '../series.json';
     var series = '';
   
    $.ajax({
     type:'GET',
-    url: dataUrl,
+    url: url,
     data: series,
     async: true,
     dataType:'json',
-    success:function(donations){
+    error: function(series, white){ console.log('Your ajax call failed. Sorry fam.'); },
+    success:function(series){
       console.log('series ajax');
   
   // charts.js demo
