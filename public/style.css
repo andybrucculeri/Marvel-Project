@@ -6,6 +6,11 @@ body {
  .heading {
   font-size: 50px;
 }
+
+ .mepic {
+  width: 200px;
+   height: auto;
+}
  
 .slide .row {
     display: flex;
@@ -35,4 +40,5 @@ body {
 .slidein2 .row {
     justify-content: space-around;
 }
+
 
