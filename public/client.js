@@ -67,17 +67,21 @@
 
     // The data for our dataset
     data: {
-        labels: ["Agent Brand", "Absorbing Man", "Agent Zero", "Aaron Stack", "Abomination", "Abyss", "Adam Warlock", "Agent X"],
+        labels: ["Agent Brand", "Absorbing Man", "Agent Zero", "Aaron Stack", "Abomination", "Abyss", "Adam Warlock", "Agent X", "Agents of Atlas", "Witch Hunter Angela"],
         datasets: [{
             label: "Number of Stories Each Character is In",
             backgroundColor: '#C60404',
-            borderColor: '#000000',
-            data: [16, 96, 25, 27, 26, 8, 205, 23],
+            borderColor: '#C60404',
+            hoverBackgroundColor: ['#C60404'],
+            hoverBorderColor: ['#000000'],
+            hoverBorderWidth: ['#000000'],
+            data: [16, 96, 25, 27, 26, 8, 205, 23, 44, 18],
                 }]
             },
     
     // Configuration options go here
-    options: {}
+    options: {
+    }
           });
   
       } //close success
