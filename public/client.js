@@ -67,12 +67,12 @@
 
     // The data for our dataset
     data: {
-        labels: ["Agent Brand", "Absorbing Man", "Agent Zero", "Aaron Stack", "Abomination", "Abyss", "Adam Warlock"],
+        labels: ["Agent Brand", "Absorbing Man", "Agent Zero", "Aaron Stack", "Abomination", "Abyss", "Adam Warlock", "Agent X"],
         datasets: [{
             label: "Number of Stories Each Character is In",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [16, 96, 25, 27, 26, 8, 205],
+            backgroundColor: '#C60404',
+            borderColor: '#000000',
+            data: [16, 96, 25, 27, 26, 8, 205, 23],
                 }]
             },
     
