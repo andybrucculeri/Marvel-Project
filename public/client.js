@@ -42,9 +42,9 @@
   })  
 
   
-  //ajax attempt 
+  //ajax request 
   
-   // var url = '../series.json';
+  
     var series = '';
   
    $.ajax({
@@ -58,7 +58,7 @@
       console.log('series ajax call success');
       console.log(series[0].startYear);
   
-  // charts.js demo
+  // This was taken from the chart.js sample library https://www.chartjs.org/samples/latest/
   
   var ctx = document.getElementById('myChart').getContext('2d');
   var chart = new Chart(ctx, {
@@ -85,7 +85,7 @@
   }); //close ajax
   
   
-//start scrollmagic simple demo 
+//made with the help of ScrollMagic and this infromation page https://www.aliciaramirez.com/2017/01/scrollmagic-for-beginners-tutorial/
   
   var controller = new ScrollMagic.Controller();
   
@@ -135,8 +135,6 @@ new ScrollMagic.Scene({
     })
     .setTween(fromLeftTimeline)
     .duration(400)
-    //    .reverse(false)
-    //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
   
   // Fade in
@@ -157,8 +155,6 @@ new ScrollMagic.Scene({
     })
     .setTween(fadeInTimeline)
     .duration(400)
-    //    .reverse(false)
-    //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
  
 //Fly in from the left
@@ -179,8 +175,6 @@ new ScrollMagic.Scene({
     })
     .setTween(fromBottomTimeline)
     .duration(400)
-    //    .reverse(false)
-    //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 console.log('client js working');

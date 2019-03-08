@@ -114,53 +114,6 @@ app.get('/series', function(request, response) {
 });
 
 
-/* 
-
-  let series = [];
-  
-    // Check will see if we have .data on all the country objects
-  // which indicates all requests have returned successfully.
-  // If the lengths don't match then we call check again in 500ms
-  let check = () => {
-    if (series.filter(c => c.data !== undefined).length 
-    !== series.length) {
-      setTimeout(check, 500);
-    } else {
-      response.sendFile(__dirname + '/series.json');
-    }
-  }
-  
-  // Call check so we don't send a response until we have all the data back
-  check();
-
-
-
-
-
-
-
-marvel.characters.findAll()
-  .then(console.log)
-  .fail(console.error)
-  .done();
-
-marvel.characters.findByName('spider-man')
-  .then(function(res) {
-    console.log('Found character ID', res.data[0].id);
-    return marvel.characters.comics(res.data[0].id);
-  })
-  .then(function(res) {
-    console.log('found %s comics of %s total', res.meta.count, res.meta.total);
-    console.log(res.data);
-  })
-  .fail(console.error)
-  .done(); */
-
-
-
-
-
-
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);

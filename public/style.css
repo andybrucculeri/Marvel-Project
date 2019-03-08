@@ -3,15 +3,9 @@ body {
     font-family: sans-serif;
 }
 
+
  .heading {
   font-size: 50px;
-}
-
- .mepic {
-  width: 200px;
-   height: auto;
-   float:left;
-   display:block;
 }
  
 .slide .row {
